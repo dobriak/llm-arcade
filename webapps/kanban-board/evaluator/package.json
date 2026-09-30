@@ -1,0 +1,17 @@
+{
+  "name": "kanban-evaluator",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:ui": "playwright test --project=ui",
+    "typecheck": "tsc --noEmit",
+    "score": "node score.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.3",
+    "typescript": "7.0.2"
+  }
+}
